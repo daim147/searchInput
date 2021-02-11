@@ -1,0 +1,57 @@
+/* **********************GOOGLE FONT LINK**************** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #7d5fff, #324371);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.search {
+  position: relative;
+  height: 50px;
+}
+.search .input {
+  background-color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.7rem;
+  height: 50px;
+  width: 50px;
+  transition: width  0.3s ease;
+}
+.btn{
+    position: absolute;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, .input:focus{
+    outline: none;
+}
+
+.search.active .input{
+width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+    
+}
